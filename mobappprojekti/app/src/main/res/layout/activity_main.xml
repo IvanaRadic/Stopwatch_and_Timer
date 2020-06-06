@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/timer999"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=":"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=":"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text=":"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="000"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            android:textColor="#fff"
+            android:text="ZAPOČNI"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:background="#95d46c"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+          ></Button>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="-50dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPause"
+                android:textColor="#fff"
+                android:text="PAUZA"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:background="#e76e54"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:paddingTop="5dp"
+                ></Button>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="-50dp">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#95d46c"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="NASTAVI"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="25sp"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStop"
+            android:textColor="#fff"
+            android:text="RESETIRAJ"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:background="#e76e54"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            ></Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/hourglass999"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layout"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unesite minute: "
+            android:textColor="#999"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_input"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#8a8a8a"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textAlignment="center"
+            android:textColor="#999" />
+
+        <Button
+        android:id="@+id/button_set"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/edit_text_input"
+        android:layout_toEndOf="@+id/edit_text_input"
+        android:layout_toRightOf="@+id/edit_text_input"
+        android:background="@drawable/tick"
+        android:text=" " />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cross"
+        android:text=" "
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:text="00:00"
+        android:textColor="#999"
+        android:textSize="60sp"/>
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text=" " />
+
+
+
+</LinearLayout>
